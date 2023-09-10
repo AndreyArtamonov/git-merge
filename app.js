@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let blocks = document.querySelectorAll('.block');
+    let element = document.querySelector('.block');
 
-    blocks.forEach(e => {
-        e.style.background = 'red'
-    })
+    setInterval(() => {
+        element.style.background = element.style.background === 'red' ? 'green' : 'red';
+        element.innerHTML = element.style.background === 'red' ? 'red' : 'green';
+    }, 1000)
 });
