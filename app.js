@@ -11,7 +11,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }, 1000)
 });
-
-qwdoqwidoqwdq
-wodqiwdqwo
-dqwd
