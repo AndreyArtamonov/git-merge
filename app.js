@@ -1,7 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
     let elements = document.querySelectorAll('.block');
+    let counter = 1;
 
-    elements.forEach(el => {
-        el.style.background = 'red';
-    })
+    setInterval(() => {
+        elements.forEach(el => {
+            el.style.background = 'red';
+
+            if(counter < 100) {
+                el.innerHTML = counter++
+            }
+        })
+    }, 500)
 });
